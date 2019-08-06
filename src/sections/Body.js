@@ -17,7 +17,7 @@ const ASSETS = [
 
 function Body() {
     return (
-      <div>Body
+      <div>
           <CardContainer assets={ASSETS}/>
       </div>
     );

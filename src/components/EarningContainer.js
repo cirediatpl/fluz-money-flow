@@ -8,14 +8,10 @@ values[2] = 1.64
 values[3] = 1.94
 
 class EarningContainer extends React.Component {
-    constructor() {
-        super();
-
-        this.state = {
+    state = {
             bigValue: 0.00,
             updates: 0
-        };
-    }
+    };
 
     componentDidMount() {
         this.interval = setInterval(() => this.update(), 1600);
@@ -45,7 +41,7 @@ class EarningContainer extends React.Component {
         return (
             <div style={{marginTop: 50}}>
                 <div>
-                    <svg width={600} height={150}>
+                    <svg width={200} height={150}>
                         <g transform=" translate(50,100)">
                             <AnimatedNumber
                                 style={{

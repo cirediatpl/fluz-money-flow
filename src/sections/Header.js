@@ -2,8 +2,8 @@ import React from 'react';
 
 function Header() {
     return (
-      <div>Here's how it works.
-      </div>
+      <p className="header">Here's how it works.
+      </p>
     );
   }
 

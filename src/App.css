@@ -15,6 +15,23 @@
   src: url("assets/fonts/DINNextLTPro-Heavy.otf") format("opentype");
 }
 
+.background {
+  position: relative;
+  width: 515px;
+  height: 1000px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  top: 600px;
+}
+
+.footer {
+  text-align: center;
+}
+
 /* flexbox div employed to ensure responsive design for mobile and web */
 
 .flexbox {
@@ -35,7 +52,7 @@
   /* flex-grow: 8; */
   position: relative;
   width: 515px;
-  height: 800px;
+  height: 1000px;
   background-color: #f9f9f9;
   text-align: center;
   line-height: 600px;
