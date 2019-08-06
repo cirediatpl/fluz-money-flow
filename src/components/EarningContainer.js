@@ -19,6 +19,7 @@ class EarningContainer extends React.Component {
 
     componentDidMount() {
         this.interval = setInterval(() => this.update(), 1600);
+        this.interval = setInterval(() => this.mountUnmount(), 11000)
     }
 
     update() {
@@ -26,6 +27,14 @@ class EarningContainer extends React.Component {
 
         this.setState({
             bigValue: values[updates],
+            updates: (updates + 1) % 4
+        });
+    }
+
+    mountUnmount() {
+        const {updates} = this.state;
+
+        this.setState({
             updates: (updates + 1) % 4
         });
     }
